@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: url(background\ 1\ img.png);
+    background-size: cover;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 99;
+}
+header .logo{
+    width: 25%;
+}
+header .logo img{
+    width: 84px;
+    background-color: #FF0000;
+}
+header .menu ul{
+    display: flex;
+}
+header .menu ul li{
+    padding: 0 20px;
+    list-style: none;
+}
+header .menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.5s ease;
+}
+header .menu ul li a:hover{
+    color: #156fc3;
+}
+header .menu-mobile{
+    display: none;
+}
+header .btn-mobile{
+    display: none;
+}
+
+/*===== Main Home =====*/
+
+#home .container{
+    width: 100%;
+    height: 100vh;
+}
+#home .container .icons{
+    width: 10%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
+    position: fixed;
+    z-index: 999;
+}
+#home .container .icons ion-icon{
+    padding: 30px 0;
+    font-size: 2rem;
+    color: #fff;
+    transition: 0.5s ease;
+}
+#home .container .icons ion-icon:hover{
+    color: #078de7;
+}
+#home .container .title{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 60px;
+}
+#home .container .title h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 5rem;
+    letter-spacing: 5px;
+}
+#home .container .title h2{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 40px;
+    font-size: 3rem;
+    margin-left: 30px;
+}
+#home .container .title h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 20px;
+    margin-top: 30px;
+    margin-left: 35px;
+
+}
+/*===== Sobre Mim =====*/
+
+#about .container{
+    width: 100%;
+    height: 100vh;
+    background: url(background-geral.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between; 
+}
+#about .container .title{
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 60px;
+}
+#about .container .title h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: left;
+}
+#about .container .title p{
+    color: #fff;
+    width: 500px;
+    margin-top: 30px;
+}
+#about .container .box-title{
+    width: 420px;
+    height: 63vh;
+    margin-top: 20px;
+    padding: 0 10px;
+    box-shadow: 0 0 10px 0 rgb(0, 68, 255);
+    border-radius: 20px;
+}
+#about .container .box-title span{
+    color: #fff;
+}
+#about .container .box-title .b1{
+    width: 400px;
+    height: 8px;
+    background: #fff;
+    margin-top: 2px;
+    border-radius: 5px;
+}
+#about .container .box-title .b2{
+    width: 280px;
+    height: 8px;
+    background: #078de7;
+    border-radius: 5px;
+}
+#about .container .box-title .b3{
+    width: 300px;
+    height: 8px;
+    background: #078de7;
+    border-radius: 5px;
+}
+#about .container .box-title .b4{
+    width: 280px;
+    height: 8px;
+    background: #078de7;
+    border-radius: 5px;
+}
+#about .container .box-title .b5{
+    width: 280px;
+    height: 8px;
+    background: #078de7;
+    border-radius: 5px;
+}
+#about .container .box-title .b6{
+    width: 200px;
+    height: 8px;
+    background: #078de7;
+    border-radius: 5px;
+}
+#about .container .box-title .b7{
+    width: 235px;
+    height: 8px;
+    background: #078de7;
+    border-radius: 5px;
+}
+
+
+
+
+
+/*===== Certificados =====*/
+#Cert .container{
+    width: 100%;
+    height: 100vh;
+    background: url(background-geral.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#Cert .container input[type=radio]{
+    display: none;
+}
+#Cert .container .card{
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    left: 0;
+    right: 0;
+    margin: 150px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0 0 10px 0 rgba(21,111,195,0.5);
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+#Cert .container .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+}
+#Cert .container .card h1{
+    position: absolute;
+    z-index: 9;
+    color: #1082e0;
+    font-size: 4rem;
+    margin-top: 60px;
+}
+#Cert .container .card p{
+    position: absolute;
+    z-index: 9;
+    width: 400px;
+    color: #1040c5;
+    margin-top: 200px;
+    text-align: justify;
+}
+#Cert .container .card button{
+    position: absolute;
+    z-index: 9;
+    margin-top: 400px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background: rgba(21,111,195,0.5);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#Cert .container .cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#item-1:checked ~ .cards #song-3,
+#item-2:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-2{
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+#item-1:checked ~ .cards #song-2,
+#item-2:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-1{
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+#item-1:checked ~ .cards #song-1,
+#item-2:checked ~ .cards #song-2,
+#item-3:checked ~ .cards #song-3{
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+/*===== Contato =====*/
+#contact .container{
+    width: 100%;
+    height: 100vh;
+    background: url(background-geral.jpg);
+    background-size: cover;
+    transition: background 0.4s ease-in;
+}
+#contact .container .content-contact{
+    width: 80%;
+    height: 60vh;
+    margin: 0 auto;
+    padding: 200px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#contact .content-contact .contact-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+#contact .content-contact .contact-left h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#contact .content-contact .linha{
+    width: 350px;
+    height: 3px;
+    background: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#contact .content-contact .contact-left ion-icon{
+    font-size: 2rem;
+    padding: 20px 0;
+}
+#contact .content-contact .contact-left span{
+    font-size: 1.2rem;
+    padding: 5px 0;
+}
+#contact .content-contact .contact-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+/* BOTAO ENVIAR CONTATO */
+#contact .content-contact .contact-right button {
+ background-color: #0e93ec ; /* cor de fundo */
+  border: none; /* remove a borda padrão */
+  color: rgba(255, 255, 255, 0.705); /* cor do texto */
+  padding: 10px 20px; /* espaço interno do botão */
+  text-align: center; /* centraliza o texto */
+  text-decoration: none; /* remove sublinhado do texto */
+  display: inline-block; /* torna o botão em um bloco e mantém o texto em uma linha */
+  font-size: 16px; /* tamanho da fonte */
+  cursor: pointer; /* cursor em formato de mão ao passar o mouse */
+  border: 1px solid #f5c6cb; /* define linha de borda*/
+  border-radius: 13px; /* bordas arredondadas */
+  z-index: 1; /* define a ordem de camadas */
+ }
+ #contact .content-contact .contact-right button:hover {
+    background-color: #cdc7bb; /* cor de fundo no hover */
+    color: #63b3f5; /* cor do texto no hover */
+
+ }
+ #contact .content-contact .contact-right button {
+    --border-radius: 25px;
+    --border-width: 7px;
+    appearance: none;
+    position: relative;
+    padding: 1em 2em;
+    border: 0;
+    background-color: #212121;
+    font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffff;
+    z-index: 2;
+  }
+  
+  #contact .content-contact .contact-right button::after {
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    background-image: conic-gradient(
+          #ff0080,
+          #ff0080,
+          #ff0080,
+          #ff0080,
+          #ff0080,
+          #ff0080,
+          #ff0080
+      );
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    filter: hue-rotate(0);
+    animation: rotate-hue634 linear 500ms infinite;
+    animation-play-state: paused;
+    border-radius: 20px;
+    border-color: #000;
+  }
+  
+  #contact .content-contact .contact-right button:hover::after {
+    animation-play-state: running;
+    border-radius: 10px;
+  }
+  
+  @keyframes rotate-hue634 {
+    to {
+      filter: hue-rotate(1turn);
+    }
+  }
+  
+  button,
+  #contact .content-contact .contact-right button::after {
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+  
+  button:active {
+    --border-width: 5px;
+  }
+  
+  #contact .content-contact .contact-right button {
+    padding: 0.9em 1.6em;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 32px;
+  }
+  
+  #contact .content-contact .contact-right button::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(46, 46, 46);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  
+  #contact .content-contact .contact-right button::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #0b4eb3, #1265c5, #0099ff, #00c3ffe7,
+        #1390e4, #0f8de0, #0b50d1, #079fdb
+  );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing345 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 20px;
+    opacity: 0;
+  }
+  
+  @keyframes glowing345 {
+    0% {
+      background-position: 0 0;
+    }
+  
+    50% {
+      background-position: 400% 0;
+    }
+  
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  #contact .content-contact .contact-right button::before {
+    opacity: 1;
+  }
+ 
+  #contact .content-contact .contact-right button:active:after {
+    background: transparent;
+  }
+  
+  #contact .content-contact .contact-right button:active {
+    color: #000;
+    font-weight: bold;
+  }
+
+
+#contact .content-contact .contact-right h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#contact .content-contact .contact-right input[type=email],
+#contact .content-contact .contact-right input[type=text]{
+    border-radius: 20px;
+    border: none;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    outline: none;
+}
+#contact .content-contact .contact-right textarea{
+    width: 100%;
+    height: 120px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    outline: none;
+    padding: 15px 20px;
+}
+
+/*===== RODAPE =====*/
+footer{
+    width: 100%;
+    height: 80px;
+    color: #FFF;
+    line-height: 80px;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    position: relative;
+    top: -80px;
+}
+footer a{
+    color: #12b7e9;
+}
+
+/*===== Responsividade =====*/
+
+@media screen and (max-width: 1280px){
+    #home .container .icons ion-icon{
+        font-size: 1.5rem;
+    }
+    #port .container .card h1{
+        font-size: 5rem;
+    }
+    #port .container .card p{
+        width: 280px;
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 960px){
+    body{
+        background: url(background-geral.jpg);
+    }
+    header{
+        background: none;
+    }
+    header .logo{
+        width: 600px;
+    }
+    header .menu{
+        display: none;
+    }
+    header .btn-mobile{
+        display: block;
+    }
+    header .btn-mobile ion-icon {
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    header .menu-mobile{
+        display: none;
+        width: 50%;
+        height: 26vh;
+        box-shadow: 0 0 15px 0 rgba(21,111,195,0.5);
+        position: fixed;
+        top: 20px;
+        border-radius: 10px;
+        background: #156fc3;
+    }
+    header .menu-mobile ul{
+        text-align: center;
+    }
+    header .menu-mobile ul li{
+        list-style: none;
+        padding: 12px 0;
+    }
+    header .menu-mobile ul li a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    #home .container .icons{
+        padding: 0 20px;
+    }
+    #home .container .title{
+        align-items: center;
+    }
+    #home .container .title h1{
+        font-size: 5rem;
+    }
+    #home .container .title h2{
+        font-size: 1.2rem;
+    }
+    #home .container .title h3{
+        font-size: 0.9rem;
+    }
+    #about .container .title{
+        align-items: center;
+    }
+    #about .container .box-title{
+        width: 100%;
+        height: 40vh;
+    }
+    #about .container .box-title .b1{
+        width: 100%;
+    }
+    #about .container .box-title .b2{
+        width: 90%;
+    }
+    #about .container .box-title .b3{
+        width: 80%;
+    }
+    #about .container .box-title .b4{
+        width: 87%;
+    }
+    #about .container .box-title .b5{
+        width: 76%;
+    }
+    #contact .container .content-contact{
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #contact .content-contact .contact-left h1{
+        font-size: 1.5rem;
+    }
+    #contact .content-contact .contact-left ion-icon{
+        font-size: 1.5rem;
+        padding: 5px 0;
+    }
+    #contact .content-contact .contact-left span{
+        font-size: 1rem;
+        padding: 5px 0;
+    }
+    #contact .content-contact .contact-right h1{
+        font-size: 1.5rem;
+        margin-top: 80px;
+    }
+    #contact .content-contact .contact-right input[type=email],
+    #contact .content-contact .contact-right input[type=text]{
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+    #contact .content-contact .contact-right textarea{
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 750px){
+    header{
+        padding: 10px;
+    }
+    #home .container .title h2{
+        letter-spacing: 30px;
+    }
+    #home .container .title h3{
+        letter-spacing: 10px;
+    }
+    #about .container .title{
+        padding: 10px 60px;
+    }
+    #about .container .title p{
+        width: 100%;
+        margin-top: 30px;
+    }
+    #port .container .card{
+        width: 60%;
+        height: 60%;
+    }
+    #port .cards .card .btn-codigo  {
+        background-color: #008CBA;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 10px;     
+     }
+     #port .cards .card .btn-codigo {
+        background-color: #005F6B; /* cor de fundo quando o mouse estiver em cima */
+      }
+
+}

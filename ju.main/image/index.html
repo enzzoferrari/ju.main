@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="Brazil">
+<head>
+    <link rel="shortcut icon" href="logo3.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfólio Responsivo | Enzzo F </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="caminho/para/o/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="caminho/para/o/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#2B2D42">
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <img src="logo3.png" alt="">
+        </div>
+        <div class="menu">
+        <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre Mim</a></li>
+        <li><a href="#Cert">Certificados</a></li>
+        <li><a href="#contact">Contato</a></li>
+        </ul>
+        </div>
+        <div class="menu-mobile">
+        <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre Mim</a></li>
+        <li><a href="#Cert">Certificados</a></li>
+        <li><a href="#contact">Contato</a></li>
+        </ul>
+        </div>
+        <div class="btn-mobile">
+        <ion-icon name="grid-outline"></ion-icon>
+        </div>
+    </header>
+    <main id="home">
+        <div class="container">
+        <div class="icons">
+        <a href="https://instagram/enzzoferrari"><ion-icon name="logo-instagram"></ion-icon></a>    
+        <a href="https://www.linkedin.com/in/enzzo-ferrari-099138238/"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+        <div class="title">
+        <h1>Enzzo </h1>
+        <h2>Ferrari</h2>
+        <h3>Engenheiro de Software</h3>
+        </div>
+        </div>
+    </main>
+    <section id="about">
+    <div class="container">
+    <div class="title">
+    <h1>Eu sou um desenvolvedor de softwares</h1>
+    <p>Desenvolvi este site utilizando habilidades em HTML, CSS e JavaScript, juntamente com o auxílio de bibliotecas como Bootstrap e jQuery. O objetivo era criar uma plataforma atraente e funcional, que refletisse minhas habilidades de design e programação. Estou animado em ter a oportunidade de compartilhar minha experiência em desenvolvimento web e mostrar meu trabalho neste projeto.</p>
+    <div class="box-title">
+
+    <p>70%</p>               
+    <div class="b1"><div class="b2"></div></div>
+    <span>HTML</span>
+
+    <p>75%</p>
+    <div class="b1"><div class="b3"></div></div>
+    <span>CSS</span>
+
+    <p>70%</p>
+    <div class="b1"><div class="b4"></div></div>
+    <span>JavaScript</span>
+
+    <p>70%</p>
+    <div class="b1"><div class="b5"></div></div>
+    <span>Java</span>
+
+    <p>50%</p>
+    <div class="b1"><div class="b6"></div></div>
+    <span>My SQL</span>
+
+    <p>65%</p>
+    <div class="b1"><div class="b7"></div></div>
+    <span>Ingles</span>
+
+    
+    </div>
+    </div>
+    </div>
+
+    </section>
+    <section id="Cert">
+        <div class="container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <div class="cards">
+            <label class="card" for="item-1" id="song-1">
+            <img src="okay.png" alt="">
+
+            <h1></h1>
+
+            <p>.</p>
+
+                </label>
+                <label class="card" for="item-2" id="song-2">
+                    <img src="okay2.png" alt="">     
+                </label>
+                <label class="card" for="item-3" id="song-3">
+                    <img src="okay4.png" alt="">                 
+        </label>
+        </div>
+        </div>
+    </section>
+    <section id="contact">
+    <div class="container">
+    <div class="content-contact">
+    <div class="contact-left">
+    <h1>Meu contato</h1>
+    <div class="linha"></div>
+    <ion-icon name="mail-outline"></ion-icon>
+    <span>enzzoferrarib@hotmail.com</span>
+    <ion-icon name="call-outline"></ion-icon>
+    <span>+55 19 9921-00202</span>
+    <ion-icon name="location-outline"></ion-icon>
+    <span>Paulinia-SP , Brazil</span>
+</div> 
+    <div class="contact-right">
+        <h1>Envie Sua mensagem</h1>
+        <div class="linha"></div>         
+        <input type="text" id="nameInput" placeholder="Seu nome">
+        <textarea id="messageTextarea" placeholder="A mensagem que deseja enviar"></textarea>
+        <button id="btn-submit" onclick="sendEmail()">Enviar</button>
+        </div>
+        <div class="alert-message"></div>
+        </div>
+        </div>
+        <style>
+            .alert-message {
+                        background-color: #0e93ec;
+                        color: #ffffff;
+                        font-weight: bold;
+                        padding: 10px;
+                        display: none;
+                        border: 1px solid #f5c6cb;
+                        border-radius: 10px;
+                        padding: 10px;
+            }
+            #port .cards .card button  {
+                        background-color: #008CBA;
+                        border: none;
+                        color: white;
+                        padding: 10px 20px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 16px;
+                        cursor: pointer;
+                        border-radius: 10px;     
+     }
+        #port .cards .card button {
+                        background-color: #005F6B; /* cor de fundo quando o mouse estiver em cima */
+      }
+
+      /* ALTERA A LINHA DO CONTATO */
+        #contact .content-contact .contact-right .linha{
+
+                        border-bottom-width: 7px; /* altere o valor para mudar a espessura da linha */
+                        border-bottom-style: solid; /* altere o estilo da linha (pontilhado, tracejado, etc.) */
+}
+        #contact .content-contact .contact-left .linha{
+
+                        border-bottom-width: 7px; /* altere o valor para mudar a espessura da linha */
+                        border-bottom-style: dashed; /* altere o estilo da linha (pontilhado, tracejado, etc.) */
+}
+          </style>  
+
+    </section>
+
+    <footer>
+        <span>Neste site foi utilizado HTML , CSS , JS , Bootstrap, Jquery feito por  <a href="">Enzzo Ferrari B</a>  </span>
+    </footer>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="js.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $(".btn-mobile").click(function(){
+    $(".menu-mobile").slideToggle("slow")
+            })
+        })
+</script>
+<script>
+       function sendEmail() {
+            // Obter os valores do formulário
+                var name = document.getElementById("nameInput").value;
+                var message = document.getElementById("messageTextarea").value;
+
+        if (!name) {
+
+            var showAlert = document.querySelector('.alert-message');
+            showAlert.textContent = 'Por favor, seu nome.';
+            showAlert.style.display = 'block';
+                                    return;
+                                             }
+                                             
+        if (!message) {
+
+            var showAlert = document.querySelector('.alert-message');
+            showAlert.textContent = 'Por favor, digite sua mensagem.';
+            showAlert.style.display = 'block';
+                                    return;
+                                            }
+            // Montar o link do email com os valores preenchidos
+                var mailto_link = "mailto:enzzocsgo12345678@gmail.com?subject=Mensagem de " + encodeURIComponent(name) + "&body=" + encodeURIComponent(message);
+
+            // Abrir o aplicativo de email padrão do usuário, com o email pré-preenchido
+                 window.location.href = mailto_link;
+}
+            // Adicionar um evento de clique ao botão de envio
+                document.getElementById("btn-submit").addEventListener("click", sendEmail);
+
+            // Esconder a mensagem de aviso quando o usuário abrir o aplicativo de email padrão
+                window.onblur = function() {
+                var showAlert = document.querySelector('.alert-message');
+                showAlert.style.display = 'none';
+            }
+</script>
+</body>
+</html>
